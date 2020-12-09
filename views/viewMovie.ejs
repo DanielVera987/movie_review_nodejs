@@ -1,0 +1,14 @@
+<%- include('header.ejs') %>
+    
+  <div class="content">
+    <br><br>
+    <h2><%=movie.title%></h2>
+    <div class="info-movie">
+      <img src="<%=movie.image%>" />
+      <div class="info">
+        <h2><cite><%=movie.author%></cite></h2>
+        <h2><time><%=movie.year%></time></h2>
+        <pre><%=movie.description%></pre>
+      </div>
+    </div>
+  </div>

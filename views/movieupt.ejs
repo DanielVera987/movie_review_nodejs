@@ -1,0 +1,32 @@
+<%- include('header.ejs') %>
+  <div class="content">
+    <%=message%>
+    <form action="/update/<%=movie.id%>" method="POST">
+      <p>
+        <label for="title">Title</label>
+        <input id="title" name="title" value="<%=movie.title%>"/>
+      </p>
+
+      <p>
+        <label for="author">Author</label>
+        <input id="author" name="author" value="<%=movie.author%>"/>
+      </p>
+
+      <p>
+        <label for="description">Description</label>
+        <textarea id="description" name="description"><%=movie.description%></textarea>
+      </p>
+
+      <p>
+        <label for="year">Year</label>
+        <input id="year" name="year" value="<%=movie.year%>"/>
+      </p>
+
+      <p>
+        <label for="image">Image</label>
+        <input id="image" name="image" value="<%=movie.image%>"/>
+      </p>
+
+      <input type="submit" class="btn" value="Enviar"/>
+    </form>
+  </div>
